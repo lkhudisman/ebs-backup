@@ -61,7 +61,7 @@ snap = conn.get_all_snapshots(snapshot_ids=a)[0]
 
 while snap.status == 'pending':
         time.sleep(2)
-        snapshot.update()
+        snap.update()
   
 print "Snapshot created"
     
